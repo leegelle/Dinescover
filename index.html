@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dinescover – Let Fate Pick Your Next Meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Dinescover is a simple, fun iOS app that helps you discover restaurants near you or in any city you choose. Spin, discover, and dine."
+  />
+  <style>
+    :root {
+      --bg-gradient-start: #ffa24b;
+      --bg-gradient-end: #ff5d8f;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --text-dark: #1e1e1e;
+      --text-muted: #6c6c6c;
+      --max-width: 1050px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      color: var(--text-dark);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 162, 75, 0.2),
+        rgba(255, 93, 143, 0.25)
+      );
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: radial-gradient(
+        circle at 20% 0%,
+        #ffffff,
+        rgba(255, 255, 255, 0.1)
+      ),
+      linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text-title {
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .logo-text-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .nav-right a {
+      font-size: 14px;
+      margin-left: 16px;
+      color: var(--text-muted);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 28px;
+      align-items: center;
+      margin-top: 18px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 840px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      line-height: 1.1;
+      margin: 0 0 12px;
+      background: linear-gradient(
+        90deg,
+        var(--bg-gradient-start),
+        var(--bg-gradient-end)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text p {
+      margin: 0 0 18px;
+      color: var(--text-dark);
+      font-size: 16px;
+    }
+
+    .hero-highlight {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .btn-primary {
+      border: none;
+      cursor: pointer;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(
+        90deg,
+        var(--bg-gradient-start),
+        var(--bg-gradient-end)
+      );
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary span.icon {
+      font-size: 18px;
+    }
+
+    .hero-secondary {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .hero-secondary strong {
+      font-weight: 600;
+      color: #444;
+    }
+
+    .hero-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 20px 18px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-tag {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hero-card-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: linear-gradient(
+        135deg,
+        var(--bg-gradient-start),
+        var(--bg-gradient-end)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .hero-card-title {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .hero-card-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .hero-card-phone {
+      border-radius: 24px;
+      background: #f7f7f9;
+      padding: 10px 10px 12px;
+      margin-top: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .phone-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .phone-spin {
+      background: white;
+      border-radius: 18px;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .phone-spin-main {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .phone-spin-main-title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .phone-spin-main-subtitle {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .phone-spin-btn {
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      background: linear-gradient(
+        90deg,
+        var(--bg-gradient-start),
+        var(--bg-gradient-end)
+      );
+      color: white;
+    }
+
+    .phone-result {
+      border-radius: 16px;
+      padding: 10px 10px;
+      background: white;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 8px;
+      font-size: 11px;
+    }
+
+    .phone-result-title {
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .phone-result-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .chip {
+      padding: 3px 7px;
+      border-radius: 999px;
+      font-size: 10px;
+      background: #eef4ff;
+      color: #3855b5;
+    }
+
+    .chip-alt {
+      background: #ffece8;
+      color: #c94432;
+    }
+
+    .chip-muted {
+      background: #f1f1f3;
+      color: #777;
+    }
+
+    .section {
+      margin-bottom: 46px;
+    }
+
+    .section-header {
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .feature-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 14px 14px 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .feature-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .feature-text {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .feature-icon.orange {
+      background: rgba(255, 162, 75, 0.18);
+      color: #d06700;
+    }
+
+    .feature-icon.pink {
+      background: rgba(255, 93, 143, 0.16);
+      color: #c42c76;
+    }
+
+    .feature-icon.blue {
+      background: rgba(87, 126, 255, 0.15);
+      color: #4159c0;
+    }
+
+    .feature-icon.green {
+      background: rgba(60, 194, 131, 0.16);
+      color: #1c7a53;
+    }
+
+    .feature-icon.purple {
+      background: rgba(144, 91, 255, 0.15);
+      color: #5e3ac8;
+    }
+
+    .feature-icon.yellow {
+      background: rgba(255, 200, 98, 0.18);
+      color: #b27b06;
+    }
+
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    @media (max-width: 800px) {
+      .how-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .how-step {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 14px 14px 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .how-step-number {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      background: rgba(0, 0, 0, 0.04);
+      margin-bottom: 8px;
+    }
+
+    .how-step-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .how-step-text {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .screens {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 20px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .screens {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .screens-preview {
+      border-radius: var(--radius-lg);
+      background: var(--card-bg);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .screens-preview-placeholder {
+      border-radius: 18px;
+      border: 1px dashed rgba(0, 0, 0, 0.12);
+      padding: 16px;
+    }
+
+    .screens-list {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .screens-list ul {
+      padding-left: 18px;
+    }
+
+    .screens-list li {
+      margin-bottom: 6px;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 12px 14px 14px;
+      margin-bottom: 10px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+    }
+
+    .faq-q {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .faq-a {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      margin-top: 20px;
+      padding-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- NAV -->
+    <header class="nav">
+      <div class="nav-left">
+        <div class="logo-mark">D</div>
+        <div class="logo-text">
+          <div class="logo-text-title">Dinescover</div>
+          <div class="logo-text-subtitle">Spin. Discover. Dine.</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#support">Support</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Let fate pick your next meal.</h1>
+        <p>
+          Can’t decide where to eat? Dinescover spins restaurants near you (or in any city worldwide) so you can
+          discover new favorites without the endless scrolling.
+        </p>
+        <div class="hero-highlight">
+          Built for iPhone · Uses Apple Maps · No account required.
+        </div>
+
+        <div class="hero-cta">
+          <!-- Replace # with real App Store link when ready -->
+          <a class="btn-primary" href="#">
+            <span class="icon">🍽️</span>
+            <span>Get Dinescover on the App Store</span>
+          </a>
+          <div class="hero-secondary">
+            <strong>Free to use</strong> · No signup · Spins in seconds
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="hero-card-tag">iOS app preview</div>
+
+        <div class="hero-card-header">
+          <div class="hero-card-avatar">🍴</div>
+          <div>
+            <div class="hero-card-title">Dinescover Spin</div>
+            <div class="hero-card-subtitle">Random restaurant picker</div>
+          </div>
+        </div>
+
+        <div class="hero-card-phone">
+          <div class="phone-top">
+            <span>Dallas, TX · 10 mi</span>
+            <span>Today · 7:30 PM</span>
+          </div>
+
+          <div class="phone-spin">
+            <div class="phone-spin-main">
+              <div class="phone-spin-main-title">Feeling indecisive?</div>
+              <div class="phone-spin-main-subtitle">
+                Tap to spin and we’ll pick a nearby spot.
+              </div>
+            </div>
+            <div class="phone-spin-btn">Spin</div>
+          </div>
+
+          <div class="phone-result">
+            <div>
+              <div class="phone-result-title">Sunset Grill &amp; Kitchen</div>
+              <div>American · 1.2 miles away</div>
+              <div class="phone-result-chip-row">
+                <span class="chip">⭐️ 4.6</span>
+                <span class="chip-alt">Casual date</span>
+              </div>
+            </div>
+            <div>
+              <div class="phone-result-title">Next steps</div>
+              <div>Open in Maps, favorite it, or spin again.</div>
+              <div class="phone-result-chip-row" style="margin-top: 6px;">
+                <span class="chip-muted">History saved</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="section-header">
+        <div class="section-title">Why people love Dinescover</div>
+        <div class="section-subtitle">
+          Simple, fun, and actually useful when no one can decide where to eat.
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon orange">🎡</div>
+          <div class="feature-title">Spin instead of scrolling</div>
+          <div class="feature-text">
+            Skip the endless list of restaurant options. Tap once, get one great suggestion, and go.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon pink">📍</div>
+          <div class="feature-title">Near you or any city</div>
+          <div class="feature-text">
+            Use your current location or choose any city worldwide to find places before you even arrive.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon blue">🗺️</div>
+          <div class="feature-title">Mini map preview</div>
+          <div class="feature-text">
+            See exactly where your pick is on a sleek map, then open Apple Maps for directions in one tap.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon.green">❤️</div>
+          <div class="feature-title">Favorites that matter</div>
+          <div class="feature-text">
+            Save spots you love to your Favorites so Dinescover becomes smarter for your tastes over time.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon purple">🕒</div>
+          <div class="feature-title">Spin history</div>
+          <div class="feature-text">
+            Every spin is saved to your History, so you can revisit places you discovered earlier.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon yellow">🔐</div>
+          <div class="feature-title">Privacy-first</div>
+          <div class="feature-text">
+            Location is used only to find nearby restaurants. No accounts, no tracking, no selling your data.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="section-header">
+        <div class="section-title">How it works</div>
+        <div class="section-subtitle">
+          Designed to make choosing a restaurant as effortless as tapping a button.
+        </div>
+      </div>
+
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="how-step-number">1</div>
+          <div class="how-step-title">Choose your area</div>
+          <div class="how-step-text">
+            Use your current location, or search for a city to plan ahead for travel, date nights, or trips.
+          </div>
+        </div>
+
+        <div class="how-step">
+          <div class="how-step-number">2</div>
+          <div class="how-step-title">Tap “Spin”</div>
+          <div class="how-step-text">
+            Dinescover looks up restaurants around that area and randomly suggests one that fits your range.
+          </div>
+        </div>
+
+        <div class="how-step">
+          <div class="how-step-number">3</div>
+          <div class="how-step-title">Open, favorite, or share</div>
+          <div class="how-step-text">
+            Open the pick in Apple Maps for directions, add to Favorites, share with friends, or spin again.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENS / PREVIEW -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">A quick look at Dinescover</div>
+        <div class="section-subtitle">
+          Clean, modern, and familiar — built to feel right at home on iOS.
+        </div>
+      </div>
+
+      <div class="screens">
+        <div class="screens-preview">
+          <div class="screens-preview-placeholder">
+            <!-- Replace this block with real screenshots later -->
+            <p style="margin-top: 0; font-weight: 600;">App Screens Coming Soon</p>
+            <p style="margin-bottom: 0;">
+              This area is perfect for a simple three-screen collage: Spin screen, result card with map, and
+              Favorites/History lists. When you're ready, swap this placeholder with real app screenshots.
+            </p>
+          </div>
+        </div>
+        <div class="screens-list">
+          <ul>
+            <li><strong>Spin screen:</strong> Big “Spin” button, location info, and a clean gradient background.</li>
+            <li><strong>Result card:</strong> Restaurant name, distance, address, map preview, and quick actions.</li>
+            <li><strong>History & Favorites:</strong> Beautiful lists that match the app’s orange/pink aesthetic.</li>
+          </ul>
+          <p style="margin-top: 10px;">
+            Dinescover is designed to feel like a natural extension of iOS — minimal friction, maximum clarity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ + SUPPORT -->
+    <section id="support" class="section">
+      <div class="section-header">
+        <div class="section-title">Support & FAQ</div>
+        <div class="section-subtitle">
+          Have a question or a feature request? We’d love to hear from you.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How do I get support for Dinescover?</div>
+        <div class="faq-a">
+          You can email us anytime at <strong>support@ideacenter.info</strong>.
+          We typically respond within 24–48 hours.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does Dinescover collect personal data?</div>
+        <div class="faq-a">
+          Dinescover uses your location only to find nearby restaurants. We do not sell your data or track you across other apps.
+          For full details, see our Privacy Policy.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is Dinescover free?</div>
+        <div class="faq-a">
+          Yes, Dinescover is free to download and use. Future versions may introduce optional premium features, but the core experience will remain simple and accessible.
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>© <span id="year"></span> Dinescover · ideacenter.info</div>
+      <div>
+        <!-- Make sure these URLs exist on your site -->
+        <a href="/dinescover-privacy">Privacy Policy</a> ·
+        <a href="/dinescover-support">Support</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple year auto-update
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
