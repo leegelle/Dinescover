@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dinescover – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 162, 75, 0.22),
+        rgba(255, 93, 143, 0.22)
+      );
+      color: #1e1e1e;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 22px 60px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ffa24b, #ff5d8f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 22px;
+      border-radius: 18px;
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+      margin-top: 24px;
+    }
+
+    a {
+      color: #c24d76;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      font-size: 13px;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Dinescover – Privacy Policy</h1>
+  <p><em>Last updated: <span id="date"></span></em></p>
+
+  <div class="card">
+    <p>
+      Dinescover ("the App") is owned and operated by Ideacenter ("we", "us", "our").
+      Your privacy is important to us, and this Privacy Policy explains how we handle your data.
+      Dinescover is designed with a <strong>privacy-first approach</strong> and collects
+      the minimum information needed for the app to function.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>Dinescover does <strong>not collect, store, or sell</strong> any personal information.</p>
+
+    <p><strong>A. Location Information (Used Temporarily)</strong></p>
+    <ul>
+      <li>Your device’s location is used <strong>only while the app is running</strong>.</li>
+      <li>We use your location solely to find nearby restaurants via Apple Maps.</li>
+      <li>Your location is <strong>never stored, transmitted, or shared</strong>.</li>
+    </ul>
+
+    <p><strong>B. City Search Input</strong></p>
+    <ul>
+      <li>When you search for a city, your input is processed locally.</li>
+      <li>No search queries or locations are uploaded or stored on our servers.</li>
+    </ul>
+
+    <p><strong>C. App Usage Data</strong></p>
+    <p>
+      We do not collect analytics or usage data. Apple or your device may track anonymized usage statistics
+      according to your system settings.
+    </p>
+
+    <h2>2. Third-Party Services</h2>
+    <p>Dinescover uses the following Apple frameworks:</p>
+    <ul>
+      <li><strong>MapKit</strong> – to search and display restaurants and maps.</li>
+      <li><strong>Core Location</strong> – to determine your device's approximate location.</li>
+    </ul>
+    <p>
+      These services are governed by Apple’s privacy policies. We do not send any data to third-party servers.
+    </p>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>
+      Your location and search inputs are used only to:
+    </p>
+    <ul>
+      <li>Find nearby restaurants based on your position or chosen city.</li>
+      <li>Display map previews and distances.</li>
+    </ul>
+
+    <p>
+      We do not analyze, store, share, or sell any information.
+    </p>
+
+    <h2>4. Data Storage and Retention</h2>
+    <p>
+      Dinescover does not store personal data on servers.  
+      Your History and Favorites are stored <strong>locally on your device only</strong> and never leave your phone.
+    </p>
+
+    <h2>5. Children’s Privacy</h2>
+    <p>
+      Dinescover is not directed to children under 13, but it does not collect any personal information regardless of age.
+    </p>
+
+    <h2>6. Your Privacy Rights</h2>
+    <p>
+      Since we do not collect or store personal data, there is no data to request, modify, or delete.
+    </p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy occasionally. Updates will be reflected on this page with a revised date.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have questions, feedback, or need assistance, contact us at:
+      <br><br>
+      📧 <strong><a href="mailto:support@ideacenter.info">support@ideacenter.info</a></strong>
+    </p>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Ideacenter · Dinescover  
+  </footer>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("date").textContent = new Date().toLocaleDateString();
+</script>
+
+</body>
+</html>
