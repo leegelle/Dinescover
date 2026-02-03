@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B0153A0F2EDFFECE001D6448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B01539F92EDFFECD001D6448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0153A002EDFFECD001D6448;
+			remoteInfo = RestrauntPicker;
+		};
+		B0153A192EDFFECE001D6448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B01539F92EDFFECD001D6448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0153A002EDFFECD001D6448;
+			remoteInfo = RestrauntPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0153A012EDFFECD001D6448 /* RestrauntPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestrauntPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0153A0E2EDFFECE001D6448 /* RestrauntPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestrauntPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0153A182EDFFECE001D6448 /* RestrauntPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestrauntPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B0153A752EE92FBC001D6448 /* Exceptions for "RestrauntPicker" folder in "RestrauntPicker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B0153A002EDFFECD001D6448 /* RestrauntPicker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B0153A032EDFFECD001D6448 /* RestrauntPicker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B0153A752EE92FBC001D6448 /* Exceptions for "RestrauntPicker" folder in "RestrauntPicker" target */,
+			);
+			path = RestrauntPicker;
+			sourceTree = "<group>";
+		};
+		B0153A112EDFFECE001D6448 /* RestrauntPickerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RestrauntPickerTests;
+			sourceTree = "<group>";
+		};
+		B0153A1B2EDFFECE001D6448 /* RestrauntPickerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RestrauntPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B01539FE2EDFFECD001D6448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0153A0B2EDFFECE001D6448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0153A152EDFFECE001D6448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B01539F82EDFFECD001D6448 = {
+			isa = PBXGroup;
+			children = (
+				B0153A032EDFFECD001D6448 /* RestrauntPicker */,
+				B0153A112EDFFECE001D6448 /* RestrauntPickerTests */,
+				B0153A1B2EDFFECE001D6448 /* RestrauntPickerUITests */,
+				B0153A022EDFFECD001D6448 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0153A022EDFFECD001D6448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0153A012EDFFECD001D6448 /* RestrauntPicker.app */,
+				B0153A0E2EDFFECE001D6448 /* RestrauntPickerTests.xctest */,
+				B0153A182EDFFECE001D6448 /* RestrauntPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0153A002EDFFECD001D6448 /* RestrauntPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0153A222EDFFECE001D6448 /* Build configuration list for PBXNativeTarget "RestrauntPicker" */;
+			buildPhases = (
+				B01539FD2EDFFECD001D6448 /* Sources */,
+				B01539FE2EDFFECD001D6448 /* Frameworks */,
+				B01539FF2EDFFECD001D6448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B0153A032EDFFECD001D6448 /* RestrauntPicker */,
+			);
+			name = RestrauntPicker;
+			packageProductDependencies = (
+			);
+			productName = RestrauntPicker;
+			productReference = B0153A012EDFFECD001D6448 /* RestrauntPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0153A0D2EDFFECE001D6448 /* RestrauntPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0153A252EDFFECE001D6448 /* Build configuration list for PBXNativeTarget "RestrauntPickerTests" */;
+			buildPhases = (
+				B0153A0A2EDFFECE001D6448 /* Sources */,
+				B0153A0B2EDFFECE001D6448 /* Frameworks */,
+				B0153A0C2EDFFECE001D6448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0153A102EDFFECE001D6448 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B0153A112EDFFECE001D6448 /* RestrauntPickerTests */,
+			);
+			name = RestrauntPickerTests;
+			packageProductDependencies = (
+			);
+			productName = RestrauntPickerTests;
+			productReference = B0153A0E2EDFFECE001D6448 /* RestrauntPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0153A172EDFFECE001D6448 /* RestrauntPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0153A282EDFFECE001D6448 /* Build configuration list for PBXNativeTarget "RestrauntPickerUITests" */;
+			buildPhases = (
+				B0153A142EDFFECE001D6448 /* Sources */,
+				B0153A152EDFFECE001D6448 /* Frameworks */,
+				B0153A162EDFFECE001D6448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0153A1A2EDFFECE001D6448 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B0153A1B2EDFFECE001D6448 /* RestrauntPickerUITests */,
+			);
+			name = RestrauntPickerUITests;
+			packageProductDependencies = (
+			);
+			productName = RestrauntPickerUITests;
+			productReference = B0153A182EDFFECE001D6448 /* RestrauntPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B01539F92EDFFECD001D6448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					B0153A002EDFFECD001D6448 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					B0153A0D2EDFFECE001D6448 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B0153A002EDFFECD001D6448;
+					};
+					B0153A172EDFFECE001D6448 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B0153A002EDFFECD001D6448;
+					};
+				};
+			};
+			buildConfigurationList = B01539FC2EDFFECD001D6448 /* Build configuration list for PBXProject "RestrauntPicker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B01539F82EDFFECD001D6448;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B0153A022EDFFECD001D6448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0153A002EDFFECD001D6448 /* RestrauntPicker */,
+				B0153A0D2EDFFECE001D6448 /* RestrauntPickerTests */,
+				B0153A172EDFFECE001D6448 /* RestrauntPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B01539FF2EDFFECD001D6448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0153A0C2EDFFECE001D6448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0153A162EDFFECE001D6448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01539FD2EDFFECD001D6448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0153A0A2EDFFECE001D6448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0153A142EDFFECE001D6448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0153A102EDFFECE001D6448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0153A002EDFFECD001D6448 /* RestrauntPicker */;
+			targetProxy = B0153A0F2EDFFECE001D6448 /* PBXContainerItemProxy */;
+		};
+		B0153A1A2EDFFECE001D6448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0153A002EDFFECD001D6448 /* RestrauntPicker */;
+			targetProxy = B0153A192EDFFECE001D6448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B0153A202EDFFECE001D6448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0153A212EDFFECE001D6448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0153A232EDFFECE001D6448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R5YDXU65K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestrauntPicker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dinescover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dinescover uses your location to help find restaurants near you";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dinescover001;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0153A242EDFFECE001D6448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R5YDXU65K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestrauntPicker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dinescover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dinescover uses your location to help find restaurants near you";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dinescover001;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0153A262EDFFECE001D6448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R5YDXU65K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideacenter.RestaurantPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestrauntPicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RestrauntPicker";
+			};
+			name = Debug;
+		};
+		B0153A272EDFFECE001D6448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideacenter.RestrauntPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestrauntPicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RestrauntPicker";
+			};
+			name = Release;
+		};
+		B0153A292EDFFECE001D6448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R5YDXU65K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideacenter.RestrauntPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestrauntPicker;
+			};
+			name = Debug;
+		};
+		B0153A2A2EDFFECE001D6448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideacenter.RestrauntPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestrauntPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01539FC2EDFFECD001D6448 /* Build configuration list for PBXProject "RestrauntPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0153A202EDFFECE001D6448 /* Debug */,
+				B0153A212EDFFECE001D6448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0153A222EDFFECE001D6448 /* Build configuration list for PBXNativeTarget "RestrauntPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0153A232EDFFECE001D6448 /* Debug */,
+				B0153A242EDFFECE001D6448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0153A252EDFFECE001D6448 /* Build configuration list for PBXNativeTarget "RestrauntPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0153A262EDFFECE001D6448 /* Debug */,
+				B0153A272EDFFECE001D6448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0153A282EDFFECE001D6448 /* Build configuration list for PBXNativeTarget "RestrauntPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0153A292EDFFECE001D6448 /* Debug */,
+				B0153A2A2EDFFECE001D6448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B01539F92EDFFECD001D6448 /* Project object */;
+}
