@@ -17,6 +17,8 @@ Supported regions currently include North America, Europe, and Australia.
 📱 App Store
 Dinescover is available on the Apple App Store:
 👉 https://apps.apple.com/us/app/dinescover/id6756343104 
+
+
 App details:
 
 Category: Food & Drink
